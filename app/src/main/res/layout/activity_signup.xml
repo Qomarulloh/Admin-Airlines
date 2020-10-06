@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+        tools:context=".Signup">
+
+    <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+            android:id="@+id/img_addFoto"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="8dp"
+            android:layout_centerHorizontal="true"
+            app:c_border="true"
+            app:c_border_width="1dp"
+            app:c_border_color="#e4e4e4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_baseline_add_a_photo_24" />
+
+    <EditText
+        android:id="@+id/et_namaSignup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_addFoto"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/shape_rectangle"
+        android:ems="10"
+        android:hint="Nama"
+        android:inputType="textPersonName"
+        android:padding="8dp"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_addFoto" />
+
+    <EditText
+        android:id="@+id/et_ttl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_namaSignup"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/shape_rectangle"
+        android:ems="10"
+        android:hint="Tanggal Lahir dd/mm/yyyy"
+        android:inputType="date"
+        android:padding="8dp"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_namaSignup" />
+
+    <EditText
+        android:id="@+id/et_alamat"
+        android:layout_width="match_parent"
+        android:layout_height="155dp"
+        android:layout_below="@+id/et_ttl"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/shape_rectangle"
+        android:ems="10"
+        android:hint="Alamat"
+        android:inputType="textCapSentences|textMultiLine"
+        android:padding="8dp"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_ttl" />
+
+    <EditText
+        android:id="@+id/et_tlp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_alamat"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/shape_rectangle"
+        android:hint="No Tlp"
+        android:inputType="number"
+        android:padding="8dp"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_alamat" />
+
+    <EditText
+        android:id="@+id/et_emailSignup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_tlp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/shape_rectangle"
+        android:hint="email"
+        android:inputType="textEmailAddress"
+        android:padding="8dp"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_tlp" />
+
+    <EditText
+        android:id="@+id/et_passwordSignup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_emailSignup"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/shape_rectangle"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="8dp"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_tlp" />
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_passwordSignup"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="100dp"
+        android:text="Register" />
+</RelativeLayout>
